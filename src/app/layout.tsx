@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { dmSerif, geistSans } from "@/app/ui/fonts";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,8 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
+        <nav className="w-full py-2 border-b flex items-center px-6">
+          <Link href="/" className="flex items-center gap-2">
+            <Image src="/dormly.svg" alt="logo" width={36} height={36} />
+            <h4 className={`${dmSerif.className} text-2xl`}>Dormly</h4>
+          </Link>
+        </nav>
         {children}
       </body>
     </html>
