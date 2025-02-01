@@ -17,17 +17,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} antialiased`}
-      >
-        <nav className="w-full py-2 border-b flex items-center px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/dormly.svg" alt="logo" width={36} height={36} />
-            <h4 className={`${dmSerif.className} text-2xl`}>Dormly</h4>
-          </Link>
-        </nav>
-        {children}
-      </body>
-    </html>
+  <body
+    className={`${geistSans.variable} antialiased bg-magnolia flex flex-col min-h-screen`}
+  >
+    <nav className="w-full p-8 flex items-center">
+      <Link href="/" className="flex items-center gap-2">
+        <Image src="/dormly.svg" alt="logo" width={36} height={36} />
+        <h4 className={`${dmSerif.className} text-2xl text-night`}>Dormly</h4>
+      </Link>
+    </nav>
+    <main className="flex-grow"> 
+      {children}
+    </main>
+    <footer className="w-full p-4 text-night">
+      <p className={`${geistSans.className} text-xs text-center mx-2 text-pretty`}>Dormly is created by Zack Dupree, Daniel Thornley, Duncan Carr, and Ryan Dodd at Bradley University.</p>
+    </footer>
+  </body>
+</html>
+
   );
 }

@@ -14,7 +14,8 @@ export default {
         magenta: "#8534EE",
         saffron: "#E8AA00",
         violet: "#E980FC",
-        licorice: "#231B1B"
+        night: "#0D160B",
+        magnolia: "#FCF7FF"
       }
     },
   },
