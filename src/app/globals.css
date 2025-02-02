@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+.intense-shadow {
+    box-shadow: 
+      0 0 20px 20px rgba(252, 247, 255, 0.95),
+      0 0 35px 35px rgba(252, 247, 255, 0.85),
+      0 0 50px 50px rgba(252, 247, 255, 0.75),
+      0 0 65px 65px rgba(252, 247, 255, 0.55),
+      0 0 80px 80px rgba(252, 247, 255, 0.35),
+      0 0 95px 95px rgba(252, 247, 255, 0.15);
+  }
