@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased bg-magnolia min-h-screen`}>
+      <body className={`${geistSans.variable} antialiased bg-magnolia`}>
         <header>
           <Navbar />
         </header>

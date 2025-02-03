@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="w-full">
         {/* Mobile Navbar */}
-        <div className="md:hidden flex-col md:px-16 lg:px-36 xl:px-60 absolute w-full bg-white shadow-md items-center justify-between z-50">
+        <div className="md:hidden flex-col md:px-16 lg:px-36 xl:px-60 sticky w-full bg-white shadow-md items-center justify-between z-50">
             <div className="flex justify-between w-full p-8">
                 <Link href="/" className="flex items-center gap-2">
                 <Image src="/dormly.svg" alt="logo" width={36} height={36} />
@@ -29,7 +29,7 @@ const Navbar = () => {
             {/* Mobile Hamburger Menu */}
             {isOpen && (
             <div>
-                <nav className="md:hidden absolute flex items-center justify-between w-dvw p-8 shadow-md z-50 bg-white">
+                <nav className="md:hidden sticky flex items-center justify-between w-dvw p-8 shadow-md z-50 bg-white">
                     <Link href="/features" className={`font-bold ${inter.className} text-lg`}>Features</Link>
                     <Link href="/roadmap" className={`font-bold ${inter.className} text-lg`}>Roadmap</Link>
                     <Link href="/about" className={`font-bold ${inter.className} text-lg`}>About</Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
         
 
         {/* Desktop Navbar */}
-        <div className="hidden md:flex md:px-16 lg:px-36 xl:px-60 absolute w-full p-8 bg-white shadow-md  items-center justify-between z-50">
+        <div className="hidden md:flex md:px-16 lg:px-36 xl:px-60 sticky w-full p-8 bg-white shadow-md  items-center justify-between z-50">
             <Link href="/" className="flex items-center gap-2">
                 <Image src="/dormly.svg" alt="logo" width={36} height={36} />
                 <h4 className={`${dmSerif.className} text-3xl text-night`}>Dormly</h4>
