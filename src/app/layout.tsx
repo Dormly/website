@@ -31,7 +31,6 @@ export default function RootLayout({
         <Link href="/roadmap" className={`font-bold ${inter.className} text-lg`}>Roadmap</Link>
         <Link href="/about" className={`font-bold ${inter.className} text-lg`}>About</Link>
         <Link href="/schedule" className={`font-bold text-white ${inter.className} bg-magenta hover:bg-saffron transition-all duration-200 px-3 py-1.5 rounded-full`}>Schedule Demo</Link>
-        <Link href="/login" className={`font-bold text-white ${inter.className} bg-magenta hover:bg-saffron transition-all duration-200 px-3 py-1.5 rounded-full`}>Login</Link>
       </nav>
     </header>
     <main> 
