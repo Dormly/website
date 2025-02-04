@@ -23,7 +23,7 @@
       "name": "Daniel Thornley"
     },
     {
-https://github.com/Dormly/OnCampus.git      "name": "Ryan Dodd",
+      "name": "Ryan Dodd",
       "email": "ryan@ryandodd.org"
     }
   ],
@@ -40,9 +40,5 @@ https://github.com/Dormly/OnCampus.git      "name": "Ryan Dodd",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=9.5.0"
   }
 }
