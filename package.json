@@ -23,25 +23,26 @@
       "name": "Daniel Thornley"
     },
     {
-      "name": "Ryan Dodd",
+https://github.com/Dormly/OnCampus.git      "name": "Ryan Dodd",
       "email": "ryan@ryandodd.org"
     }
   ],
   "dependencies": {
+    "next": "15.1.6",
+    "npm": "^11.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=14.0.0",
-    "npm": ">=12.0.0"
+    "npm": ">=9.5.0"
   }
 }
