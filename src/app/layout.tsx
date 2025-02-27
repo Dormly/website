@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
   <body
-    className={`${geistSans.variable} antialiased bg-magnolia min-h-screen`}
+    className={`${geistSans.variable} antialiased bg-magnolia min-h-screen overflow-x-clip`}
   >
     <header className="w-full p-8 px-48 bg-white shadow-md flex items-center justify-between z-50">
       <Link href="/" className="flex items-center gap-2">
