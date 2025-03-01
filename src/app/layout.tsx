@@ -36,6 +36,10 @@ export default function RootLayout({
     <main> 
       {children}
     </main>
+    <footer className="w-full h-full flex flex-col items-center bg-magenta mt-14 relative">
+      <p className="relative z-10 p-4 text-white">What's this even do</p>
+      <p className="relative z-10 p-4 text-white">I'm just a funny footer</p>
+    </footer>
   </body>
 </html>
 
