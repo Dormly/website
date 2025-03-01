@@ -1,12 +1,13 @@
 {
   "name": "website",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/Dormly/website"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
