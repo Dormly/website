@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "vishwar.mdsnippets",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
     ]
 }
