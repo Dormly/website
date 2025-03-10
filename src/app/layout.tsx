@@ -33,12 +33,13 @@ export default function RootLayout({
         <Link href="/schedule" className={`font-bold text-white ${inter.className} bg-magenta hover:bg-saffron transition-all duration-200 px-3 py-1.5 rounded-full`}>Schedule Demo</Link>
       </nav>
     </header>
-    <main> 
+    <main className="h-screen"> 
       {children}
     </main>
-    <footer className="w-full h-full flex flex-col items-center bg-magenta mt-14 relative">
-      <p className="relative z-10 p-4 text-white">What's this even do</p>
-      <p className="relative z-10 p-4 text-white">I'm just a funny footer</p>
+    <footer>
+      <div className="bg-magenta text-white p-8 text-center">
+        <p className="text-lg">© 2025 Dormly. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
