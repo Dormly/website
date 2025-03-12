@@ -30,7 +30,7 @@ export default function RootLayout({
         <Link href="/features" className={`font-bold ${inter.className} text-lg`}>Features</Link>
         <Link href="/roadmap" className={`font-bold ${inter.className} text-lg`}>Roadmap</Link>
         <Link href="/about" className={`font-bold ${inter.className} text-lg`}>About</Link>
-        <Link href="/schedule" className={`font-bold text-white ${inter.className} bg-magenta hover:bg-saffron transition-all duration-200 px-3 py-1.5 rounded-full`}>Schedule Demo</Link>
+        <Link href="/schedule" className={`font-bold text-white ${inter.className} bg-magenta hover:bg-saffron hover:text-black transition-all duration-200 px-3 py-1.5 rounded-full`}>Schedule Demo</Link>
       </nav>
     </header>
     <main className="h-screen"> 
