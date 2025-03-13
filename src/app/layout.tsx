@@ -1,48 +1,57 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import Image from "next/image";
-
-import { dmSerif, geistSans, inter } from "@/app/ui/fonts";
 import Link from "next/link";
 
+import type { Metadata } from "next";
+import { inter } from "./ui/fonts";
+import "./globals.css";
+
+import Navbar from "./components/Navbar";
+
+function SocialIcon({ href, iconSrc }: { href: string; iconSrc: string }) {
+	return (
+		<Link href={href} target="_blank">
+			<div className="hover:bg-saffron rounded-full bg-white p-2 duration-100">
+				<Image src={iconSrc} alt="Social Link" width={16} height={16} />
+			</div>
+		</Link>
+	);
+}
+
+function Footer() {
+	return (
+		<div className="flex flex-row items-center justify-between p-8 font-bold text-white md:px-16 lg:px-36 xl:px-60">
+			<div className="">
+				<Image src="/dormly.svg" alt="logo" width={72} height={72} />
+			</div>
+			<div className="flex flex-row items-center gap-[1rem]">
+				<SocialIcon
+					href="https://www.linkedin.com/company/dormlygroup"
+					iconSrc="/linkedin.svg"
+				/>
+				<SocialIcon href="/" iconSrc="/instagram.svg" />
+				<p>© Dormly 2025 All rights reserved.</p>
+			</div>
+		</div>
+	);
+}
+
 export const metadata: Metadata = {
-  title: "Dormly.",
-  description: "Your one stop shop for all things university",
+	title: "Dormly",
+	description: "Replace, Integrate, Consolidate",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-  <body
-    className={`${geistSans.variable} antialiased bg-magnolia min-h-screen overflow-x-clip`}
-  >
-    <header className="w-full p-8 px-48 bg-white shadow-md flex items-center justify-between z-50">
-      <Link href="/" className="flex items-center gap-2">
-        <Image src="/dormly.svg" alt="logo" width={36} height={36} />
-        <h4 className={`${dmSerif.className} text-3xl text-night`}>Dormly</h4>
-      </Link>
-
-      <nav className="flex items-center gap-8">
-        <Link href="/features" className={`font-bold ${inter.className} text-lg`}>Features</Link>
-        <Link href="/roadmap" className={`font-bold ${inter.className} text-lg`}>Roadmap</Link>
-        <Link href="/about" className={`font-bold ${inter.className} text-lg`}>About</Link>
-        <Link href="/schedule" className={`font-bold text-white ${inter.className} bg-magenta hover:bg-saffron hover:text-black transition-all duration-200 px-3 py-1.5 rounded-full`}>Schedule Demo</Link>
-      </nav>
-    </header>
-    <main className="h-screen"> 
-      {children}
-    </main>
-    <footer>
-      <div className="bg-magenta text-white p-8 text-center">
-        <p className="text-lg">© 2025 Dormly. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
-</html>
-
-  );
+	return (
+		<html lang="en">
+			<body className={`${inter.variable} bg-magenta antialiased`}>
+				<Navbar />
+				<div className="bg-magnolia">{children}</div>
+				<Footer />
+			</body>
+		</html>
+	);
 }
