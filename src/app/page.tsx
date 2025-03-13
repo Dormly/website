@@ -189,7 +189,7 @@ export default function Home() {
 			</Section>
 
 			<Section color="bg-magnolia">
-				<h1 className="px-[2rem] text-center text-5xl font-bold">
+				<h1 id="about" className="px-[2rem] text-center text-5xl font-bold">
 					The team behind <span className={`${dmSerif.className}`}>Dormly</span>
 					<span className="text-saffron">.</span>
 				</h1>
