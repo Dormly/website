@@ -1,3 +1,9 @@
+import { Section } from "../components/Section";
+
 export default function Contact() {
-	return <p>Contact</p>;
+	return (
+		<Section color="bg-magnolia">
+			<p>Contact</p>
+		</Section>
+	);
 }

@@ -1,3 +1,9 @@
+import { Section } from "../components/Section";
+
 export default function Roadmap() {
-	return <p>Roadmap</p>;
+	return (
+		<Section color="bg-magnolia">
+			<p>Roadmap</p>
+		</Section>
+	);
 }
