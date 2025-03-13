@@ -98,12 +98,15 @@ export default function Home() {
 			<Section color="bg-magenta">
 				<span className="flex flex-col items-center gap-[0.5rem]">
 					<h1 className="text-center text-3xl font-bold">
-						On average, a university spends
+						Without <span className={`${dmSerif.className}`}>Dormly</span>,
+						universities spend
 					</h1>
-					<h1 className="decoration-saffron text-5xl font-bold underline underline-offset-4">
+					<h1 className="decoration-saffron text-center text-5xl font-bold underline underline-offset-4">
 						$1,670,687
 					</h1>
-					<h1 className="text-3xl font-bold">on software annually.</h1>
+					<h1 className="text-center text-3xl font-bold">
+						annually on 45 different types of software.
+					</h1>
 				</span>
 				<h1 className="px-[2rem] text-center text-5xl font-bold underline-offset-4">
 					Real students & staff, real problems
@@ -180,9 +183,9 @@ export default function Home() {
 							<span className="text-saffron">.</span>
 						</h1>
 						<p className="w-[20rem] text-xl">
-							Dormly&apos;s software is built for higher-education institutions,
-							nothing else. No more morphing general-purpose software into
-							something it&apos;s not.
+							Dormly&apos;s software is purpose-built for higher-education
+							institutions, nothing else. No more morphing general-purpose
+							software into something it&apos;s not.
 						</p>
 					</div>
 				</div>

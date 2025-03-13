@@ -29,7 +29,7 @@ function Footer() {
 					iconSrc="/linkedin.svg"
 				/>
 				<SocialIcon href="/" iconSrc="/instagram.svg" />
-				<p>© Dormly 2025 All rights reserved.</p>
+				<p>&copy; 2025 Dormly</p>
 			</div>
 		</div>
 	);
