@@ -27,7 +27,6 @@ function Footer() {
 				<SocialIcon
 					href="https://www.linkedin.com/company/dormlygroup"
 					iconSrc="/linkedin.svg"
-					target="_blank"
 				/>
 				<SocialIcon href="/" iconSrc="/instagram.svg" />
 				<p>© Dormly 2025 All rights reserved.</p>
