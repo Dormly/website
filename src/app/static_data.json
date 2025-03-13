@@ -1,0 +1,48 @@
+{
+	"employees": [
+		{
+			"name": "Zachary Dupree",
+			"position": "Founder & Developer",
+			"imageSrc": "/dormly.svg",
+			"description": "Zack is a 2nd year Computer Science student and Resident Advisor at Bradley University. Zack enjoys coding projects that make life easier and simpler."
+		},
+		{
+			"name": "Ryan Dodd",
+			"position": "Co-Founder & Developer",
+			"imageSrc": "/dormly.svg",
+			"description": "Ryan is a 3rd year Computer Science student who loves programming. Ryan has experience developing in multiple area, particularly the web and augmented reality markets. In his free time, he enjoys rock climbing, reading, and creating new ideas."
+		},
+		{
+			"name": "Duncan Carr",
+			"position": "Co-Founder & Developer",
+			"imageSrc": "/dormly.svg",
+			"description": "Duncan is a 2nd year Mathematics student with a hobby for programming. Duncan has experience with a variety of computer science topics, dabbling in whatever interests him at a given time. Duncan enjoys learning new things, cooking, and spending time with friends."
+		},
+		{
+			"name": "Daniel Thornley",
+			"position": "Co-Founder & Developer",
+			"imageSrc": "/dormly.svg",
+			"description": ""
+		},
+		{
+			"name": "Alexander Talbott",
+			"position": "UI/UX Design",
+			"imageSrc": "/dormly.svg",
+			"description": ""
+		},
+		{
+			"name": "JD",
+			"position": "Developer",
+			"imageSrc": "/dormly.svg",
+			"description": ""
+		}
+	],
+	"negativeTestimonials": [
+		{
+			"imageSrc": "/negativeTestimonials/josh.jpeg",
+			"name": "Josh M",
+			"relation": "Resident Advisor @ Auburn University",
+			"description": "Our supervisors don't even know how to use our current software"
+		}
+	]
+}
