@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 import { Section } from "../components/Section";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
