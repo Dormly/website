@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Section } from "@/app/components/Section";
 
 export default function OnCampus() {
