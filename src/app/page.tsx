@@ -143,30 +143,33 @@ export default function Home() {
 					width={640}
 					height={640}
 				/>
-				<div className="flex flex-row flex-wrap justify-center gap-[2rem]">
-					<div className="flex flex-col items-center gap-[0.5rem]">
+				<div className="flex flex-row flex-wrap justify-center gap-8">
+					<div className="flex flex-col items-center gap-4 bg-white
+					rounded-xl p-6">
 						<h1 className="text-4xl font-bold">
 							Replace<span className="text-saffron">.</span>
 						</h1>
-						<p className="w-[20rem] text-xl">
+						<p className="w-96 text-xl leading-8 text-pretty">
 							Our software suite is designed to replace and improve software in
 							use at higher-education institutions.
 						</p>
 					</div>
-					<div className="flex flex-col items-center gap-[0.5rem]">
+					<div className="flex flex-col items-center gap-4 bg-white
+					rounded-xl p-6">
 						<h1 className="text-4xl font-bold">
 							Integrate<span className="text-saffron">.</span>
 						</h1>
-						<p className="w-[20rem] text-xl">
+						<p className="w-96 text-xl leading-8 text-pretty">
 							Provide a consistent, streamlined user experience. Reduce
 							frustration caused by navigating between separate sites and apps.
 						</p>
 					</div>
-					<div className="flex flex-col items-center gap-[0.5rem]">
+					<div className="flex flex-col items-center gap-4 bg-white
+					rounded-xl p-6">
 						<h1 className="text-4xl font-bold">
 							Consolidate<span className="text-saffron">.</span>
 						</h1>
-						<p className="w-[20rem] text-xl">
+						<p className="w-96 text-xl leading-8 text-pretty">
 							Cut costs and confusion by consolidating to a single, easy to use
 							system.
 						</p>
