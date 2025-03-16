@@ -200,7 +200,7 @@ export default function Home() {
 					</div>
 				</div>
 				<Link href="/software" className="font-bold text-white">
-					<span className="bg-saffron flex flex-row items-center gap-[0.3rem] rounded-full px-3 py-1.5">
+					<span className="bg-saffron flex flex-row items-center gap-1 rounded-full px-3 py-1.5">
 						<p>Check it Out</p>
 						<ChevronRight
 							strokeWidth={3}
@@ -212,14 +212,14 @@ export default function Home() {
 
 			{/* Team */}
 			<Section color="bg-magnolia">
-				<h1 className="px-[2rem] text-center text-5xl font-bold">
+				<h1 className="px-8 text-center text-5xl font-bold">
 					The team behind <span className={`${dmSerif.className}`}>Dormly</span>
 					<span className="text-saffron">.</span>
 				</h1>
-				<h1 className="px-[2rem] text-center text-3xl font-bold">
+				<h1 className="px-8 text-center text-3xl font-bold">
 					Built by students and staff, for students and staff.
 				</h1>
-				<div className="flex max-w-[75rem] flex-row flex-wrap justify-center gap-[2rem]">
+				<div className="grid justify-center gap-8 px-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
 					{static_data.employees.map((employee) => (
 						<Bio
 							key={employee.name}
