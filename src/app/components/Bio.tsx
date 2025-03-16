@@ -1,15 +1,18 @@
 import Image from "next/image";
+import { SocialIcon } from "./SocialIcon";
 
 export function Bio({
 	imageSrc,
 	name,
 	description,
 	position,
+	linkedinLink,
 }: {
 	imageSrc: string;
 	name: string;
 	description: string;
 	position: string;
+	linkedinLink?: string;
 }) {
 	return (
 		<div className="flex w-[30rem] flex-row gap-[2rem] rounded-xl bg-white p-[2rem] text-black">
@@ -27,6 +30,10 @@ export function Bio({
 				</span>
 
 				<p>{description}</p>
+
+				{linkedinLink && (
+					<SocialIcon href={linkedinLink} iconSrc="/linkedin.svg" />
+				)}
 			</div>
 		</div>
 	);

@@ -6,16 +6,7 @@ import { inter } from "./ui/fonts";
 import "./globals.css";
 
 import Navbar from "./components/Navbar";
-
-function SocialIcon({ href, iconSrc }: { href: string; iconSrc: string }) {
-	return (
-		<Link href={href} target="_blank">
-			<div className="hover:bg-saffron rounded-full bg-white p-2 duration-100">
-				<Image src={iconSrc} alt="Social Link" width={16} height={16} />
-			</div>
-		</Link>
-	);
-}
+import { SocialIcon } from "./components/SocialIcon";
 
 function Footer() {
 	return (
@@ -49,7 +40,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${inter.variable} bg-magenta antialiased`}>
 				<Navbar />
-				<div className="bg-magnolia">{children}</div>
+				<div className="bg-magnolia flex flex-col overflow-x-hidden">
+					{children}
+				</div>
 				<Footer />
 			</body>
 		</html>

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { dmSerif } from "./ui/fonts";
-import { GraduationCap } from "lucide-react";
+import { ChevronRight, GraduationCap } from "lucide-react";
 import { Testimonial } from "./components/Testimonial";
 import { Bio } from "./components/Bio";
 import { Section } from "./components/Section";
@@ -12,6 +12,7 @@ import static_data from "./static_data.json";
 
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 export default function Home() {
 	const words = [
@@ -48,7 +49,8 @@ export default function Home() {
 	}, [isAnimating, words.length]);
 
 	return (
-		<div className="flex flex-col overflow-x-hidden">
+		<>
+			{/* Landing Graphic */}
 			<div className="flex flex-wrap justify-center gap-[3rem] py-[2rem]">
 				<div className="flex w-96 flex-col items-center justify-center py-[2rem] text-6xl">
 					<h1 className="">Connect your</h1>
@@ -95,16 +97,17 @@ export default function Home() {
 				</div>
 			</div>
 
+			{/* Attention Grabber */}
 			<Section color="bg-magenta">
 				<span className="flex flex-col items-center gap-[0.5rem]">
-					<h1 className="text-center text-3xl font-bold">
+					<h1 className="px-[2rem] text-center text-3xl font-bold">
 						Without <span className={`${dmSerif.className}`}>Dormly</span>,
 						universities spend
 					</h1>
 					<h1 className="decoration-saffron text-center text-5xl font-bold underline underline-offset-4">
 						$1,670,687
 					</h1>
-					<h1 className="text-center text-3xl font-bold">
+					<h1 className="px-[2rem] text-center text-3xl font-bold">
 						annually on 45 different types of software.
 					</h1>
 				</span>
@@ -112,7 +115,7 @@ export default function Home() {
 					Real students & staff, real problems
 					<span className="text-saffron">.</span>
 				</h1>
-				<Marquee autoFill={true} pauseOnHover={true}>
+				<Marquee autoFill={true}>
 					{static_data.negativeTestimonials.map((testimonial) => (
 						<Testimonial
 							key={testimonial.name}
@@ -125,6 +128,7 @@ export default function Home() {
 				</Marquee>
 			</Section>
 
+			{/* Differentiation */}
 			<Section color="bg-magnolia">
 				<h1 className="px-[2rem] text-center text-5xl font-bold">
 					The <span className={`${dmSerif.className}`}>Dormly</span> Difference
@@ -137,8 +141,8 @@ export default function Home() {
 					width={640}
 					height={640}
 				/>
-				<span className="flex flex-row flex-wrap justify-center gap-[2rem]">
-					<span className="flex flex-col items-center gap-[0.5rem]">
+				<div className="flex flex-row flex-wrap justify-center gap-[2rem]">
+					<div className="flex flex-col items-center gap-[0.5rem]">
 						<h1 className="text-4xl font-bold">
 							Replace<span className="text-saffron">.</span>
 						</h1>
@@ -146,17 +150,17 @@ export default function Home() {
 							Our software suite is designed to replace and improve software in
 							use at higher-education institutions.
 						</p>
-					</span>
-					<span className="flex flex-col items-center gap-[0.5rem]">
+					</div>
+					<div className="flex flex-col items-center gap-[0.5rem]">
 						<h1 className="text-4xl font-bold">
 							Integrate<span className="text-saffron">.</span>
 						</h1>
 						<p className="w-[20rem] text-xl">
-							Provide a consistent, streamlined user experience and reduce time
-							spent navigating between separate sites and apps.
+							Provide a consistent, streamlined user experience. Reduce
+							frustration caused by navigating between separate sites and apps.
 						</p>
-					</span>
-					<span className="flex flex-col items-center gap-[0.5rem]">
+					</div>
+					<div className="flex flex-col items-center gap-[0.5rem]">
 						<h1 className="text-4xl font-bold">
 							Consolidate<span className="text-saffron">.</span>
 						</h1>
@@ -164,10 +168,11 @@ export default function Home() {
 							Cut costs and confusion by consolidating to a single, easy to use
 							system.
 						</p>
-					</span>
-				</span>
+					</div>
+				</div>
 			</Section>
 
+			{/* Differentiation Continued */}
 			<Section color="bg-magenta">
 				<h1 className="px-[2rem] text-center text-5xl font-bold">
 					Built for higher-education institutions
@@ -189,15 +194,25 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
+				<Link href="/software" className="font-bold text-white">
+					<span className="bg-saffron flex flex-row items-center gap-[0.3rem] rounded-full px-3 py-1.5">
+						<p>Check it Out</p>
+						<ChevronRight
+							strokeWidth={3}
+							style={{ width: "1em", height: "1em" }}
+						/>
+					</span>
+				</Link>
 			</Section>
 
+			{/* Team */}
 			<Section color="bg-magnolia">
 				<h1 className="px-[2rem] text-center text-5xl font-bold">
 					The team behind <span className={`${dmSerif.className}`}>Dormly</span>
 					<span className="text-saffron">.</span>
 				</h1>
 				<h1 className="px-[2rem] text-center text-3xl font-bold">
-					Our software is built by students and staff, for students and staff.
+					Built by students and staff, for students and staff.
 				</h1>
 				<div className="flex max-w-[75rem] flex-row flex-wrap justify-center gap-[2rem]">
 					{static_data.employees.map((employee) => (
@@ -207,10 +222,11 @@ export default function Home() {
 							name={employee.name}
 							description={employee.description}
 							position={employee.position}
+							linkedinLink={employee.linkedinLink}
 						/>
 					))}
 				</div>
 			</Section>
-		</div>
+		</>
 	);
 }

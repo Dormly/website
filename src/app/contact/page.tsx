@@ -2,8 +2,10 @@ import { Section } from "../components/Section";
 
 export default function Contact() {
 	return (
-		<Section color="bg-magnolia">
-			<p>Contact</p>
-		</Section>
+		<>
+			<Section color="bg-magnolia">
+				<p>Contact</p>
+			</Section>
+		</>
 	);
 }
