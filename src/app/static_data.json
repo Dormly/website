@@ -3,38 +3,44 @@
 		{
 			"name": "Zachary Dupree",
 			"position": "Founder & Developer",
-			"imageSrc": "/dormly.svg",
-			"description": "Zack is a 2nd year Computer Science student and Resident Advisor at Bradley University. Zack enjoys coding projects that make life easier and simpler."
+			"imageSrc": "/bioPhotos/zack.png",
+			"description": "Zack is a 2nd year Computer Science student and Resident Advisor at Bradley University. Zack enjoys coding projects that make life easier and simpler.",
+			"linkedinLink": "https://www.linkedin.com/in/zachary-dupree/"
 		},
 		{
 			"name": "Ryan Dodd",
 			"position": "Co-Founder & Developer",
 			"imageSrc": "/dormly.svg",
-			"description": "Ryan is a 3rd year Computer Science student who loves programming. Ryan has experience developing in multiple area, particularly the web and augmented reality markets. In his free time, he enjoys rock climbing, reading, and creating new ideas."
+			"description": "Ryan is a 3rd year Computer Science student and Resident Advisor at Bradley University who loves programming. Ryan has experience developing in multiple areas, particularly with web and augmented reality. In his free time, Ryan enjoys rock climbing, reading, and creating new ideas.",
+			"linkedinLink": "https://www.linkedin.com/in/ryan-dodd-171a30249/"
 		},
 		{
 			"name": "Duncan Carr",
 			"position": "Co-Founder & Developer",
 			"imageSrc": "/dormly.svg",
-			"description": "Duncan is a 2nd year Mathematics student with a hobby for programming. Duncan has experience with a variety of computer science topics, dabbling in whatever interests him at a given time. Duncan enjoys learning new things, cooking, and spending time with friends."
+			"description": "Duncan is a 2nd year Mathematics student and Resident Advisor at Bradley University, with a hobby for programming. Duncan has experience with a variety of computer science topics, dabbling in whatever interests him at a given time. Duncan enjoys learning new things, cooking, and spending time with friends.",
+			"linkedinLink": "https://www.linkedin.com/in/duncan-carr-277468263/"
 		},
 		{
 			"name": "Daniel Thornley",
 			"position": "Co-Founder & Developer",
 			"imageSrc": "/dormly.svg",
-			"description": ""
+			"description": "",
+			"linkedinLink": ""
 		},
 		{
 			"name": "Alexander Talbott",
 			"position": "UI/UX Design",
 			"imageSrc": "/dormly.svg",
-			"description": ""
+			"description": "Alexander is a UX designer, dedicated to ensuring the best possible experience for all users. He studied at Bradley University and has traveled the globe working for clients, making digital and physical products that put user needs first.",
+			"linkedinLink": ""
 		},
 		{
 			"name": "JD",
 			"position": "Developer",
 			"imageSrc": "/dormly.svg",
 			"description": "JD is a 2nd year Computer Science and Music student at Bradley University. He has experience with all kinds of software development, from full stack websites to Minecraft mods. He also plays the violin, and does gigs in his free time."
+			"linkedinLink": ""
 		}
 	],
 	"negativeTestimonials": [
@@ -43,6 +49,30 @@
 			"name": "Josh M",
 			"relation": "Resident Advisor @ Auburn University",
 			"description": "Our supervisors don't even know how to use our current software"
+		},
+		{
+			"imageSrc": "/dormly.svg",
+			"name": "Riley T",
+			"relation": "Student @ Lewis University",
+			"description": "Our current student app is just a website crammed into an app"
+		},
+		{
+			"imageSrc": "/dormly.svg",
+			"name": "Jackson S",
+			"relation": "Student @ University of South Florida",
+			"description": "I have to log in five times just to navigate our portal"
+		},
+		{
+			"imageSrc": "/dormly.svg",
+			"name": "Jessica A",
+			"relation": "Student @ University",
+			"description": "Lorem Ipsum"
+		},
+		{
+			"imageSrc": "/dormly.svg",
+			"name": "Sam F",
+			"relation": "Student @ University",
+			"description": "Lorem Ipsum"
 		}
 	]
 }
