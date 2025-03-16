@@ -216,7 +216,7 @@ export default function Home() {
 				<h1 className="px-[2rem] text-center text-3xl font-bold">
 					Built by students and staff, for students and staff.
 				</h1>
-				<div className="flex max-w-[75rem] flex-row flex-wrap justify-center gap-[2rem]">
+				<div className="grid justify-center gap-[2rem] px-[2rem] sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
 					{static_data.employees.map((employee) => (
 						<Bio
 							key={employee.name}

@@ -17,7 +17,7 @@ export function Bio({
 	linkedinLink?: string;
 }) {
 	return (
-		<div className="flex w-[30rem] flex-row gap-[2rem] rounded-xl bg-white p-[2rem] text-black">
+		<div className="flex max-w-[30rem] flex-row gap-[2rem] rounded-xl bg-white p-[2rem] text-black">
 			<Image
 				className="h-fit rounded-full"
 				alt="Testimonial Picture"
