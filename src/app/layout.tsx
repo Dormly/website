@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-
+import React from "react";
 import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
 import "./globals.css";

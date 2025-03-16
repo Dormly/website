@@ -5,6 +5,8 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import Image from "next/image";
+import React from "react";
+
 import Link from "next/link";
 
 import { dmSerif } from "@/app/ui/fonts";
