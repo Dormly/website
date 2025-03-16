@@ -179,27 +179,25 @@ export default function Home() {
 
 			{/* Differentiation Continued */}
 			<Section color="bg-magenta">
-				<h1 className="px-[2rem] text-center text-5xl font-bold">
-					Built for higher-education institutions
-					<span className="text-saffron">.</span>
-				</h1>
-				<div className="flex flex-row flex-wrap items-center justify-center gap-[3rem]">
-					<div className="">
-						<GraduationCap width={72} height={72} />
-					</div>
-					<div className="flex flex-col">
-						<h1 className="text-3xl font-bold">
-							The right tool for the job
-							<span className="text-saffron">.</span>
-						</h1>
-						<p className="w-[20rem] text-xl">
-							Dormly&apos;s software is purpose-built for higher-education
-							institutions, nothing else. No more morphing general-purpose
-							software into something it&apos;s not.
-						</p>
-					</div>
-				</div>
-				<Link href="/software" className="font-bold text-white">
+				<div className="max-w-250 px-8">
+					<h1 className="pb-8 text-center text-5xl font-bold">
+						Built for higher-education institutions
+						<span className="text-saffron">.</span>
+					</h1>
+					{/*<div className="flex flex-row flex-wrap items-center justify-center gap-[3rem]">*/}
+						<div className="flex flex-col gap-2 bg-white rounded-xl p-6 text-black">
+							<div className="text-3xl font-bold flex items-center">
+								<GraduationCap size={36} style={{ marginRight: "0.5rem" }} />
+								The right tool for the job
+								<span className="text-saffron">.</span>
+							</div>
+							<p className="text-xl">
+								Dormly&apos;s software is purpose-built for higher-education
+								institutions, nothing else. No more morphing general-purpose
+								software into something it&apos;s not.
+							</p>
+
+							<Link href="/software" className="font-bold text-white">
 					<span className="bg-saffron flex flex-row items-center gap-1 rounded-full px-3 py-1.5">
 						<p>Check it Out</p>
 						<ChevronRight
@@ -207,7 +205,11 @@ export default function Home() {
 							style={{ width: "1em", height: "1em" }}
 						/>
 					</span>
-				</Link>
+							</Link>
+						</div>
+					{/*</div>*/}
+
+				</div>
 			</Section>
 
 			{/* Team */}
