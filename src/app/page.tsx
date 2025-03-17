@@ -1,11 +1,14 @@
 "use client";
 
-import React from "react";
-
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { dmSerif } from "./ui/fonts";
-import { ChevronRight, GraduationCap } from "lucide-react";
+import {
+	ChevronLeft,
+	ChevronRight,
+	GraduationCap,
+	Paintbrush,
+} from "lucide-react";
 import { Testimonial } from "./components/Testimonial";
 import { Bio } from "./components/Bio";
 import { Section } from "./components/Section";
@@ -14,7 +17,14 @@ import static_data from "./static_data.json";
 
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import Link from "next/link";
+import {
+	Carousel,
+	CarouselApi,
+	CarouselContent,
+	CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { CarouselCard } from "@/app/components/CarouselCard";
 
 export default function Home() {
 	const words = [
@@ -30,6 +40,38 @@ export default function Home() {
 	];
 	const [currentWordIndex, setCurrentWordIndex] = useState(0);
 	const [isAnimating, setIsAnimating] = useState(true);
+	const [api, setApi] = useState<CarouselApi>();
+	const [current, setCurrent] = React.useState(0);
+	const [count, setCount] = React.useState(0);
+
+	useEffect(() => {
+		if (!api) {
+			return;
+		}
+
+		setCount(api.scrollSnapList().length);
+		setCurrent(api.selectedScrollSnap() + 1);
+
+		api.on("select", () => {
+			setCurrent(api.selectedScrollSnap() + 1);
+		});
+	}, [api]);
+
+	const scrollNext = () => {
+		if (!api) {
+			return;
+		}
+
+		api.scrollNext();
+	};
+
+	const scrollPrev = () => {
+		if (!api) {
+			return;
+		}
+
+		api.scrollPrev();
+	};
 
 	useEffect(() => {
 		if (!isAnimating) return;
@@ -132,20 +174,19 @@ export default function Home() {
 
 			{/* Differentiation */}
 			<Section color="bg-magnolia">
-				<h1 className="px-[2rem] text-center text-5xl font-bold">
+				<h1 className="px-8 text-center text-5xl font-bold">
 					The <span className={`${dmSerif.className}`}>Dormly</span> Difference
 					<span className="text-saffron">.</span>
 				</h1>
 				<Image
-					className="px-[2rem]"
+					className="px-8"
 					src="/landingPage/macbook.png"
 					alt="macbook"
 					width={640}
 					height={640}
 				/>
 				<div className="flex flex-row flex-wrap justify-center gap-8">
-					<div className="flex flex-col items-center gap-4 bg-white
-					rounded-xl p-6">
+					<div className="flex flex-col items-center gap-4 rounded-xl bg-white p-6">
 						<h1 className="text-4xl font-bold">
 							Replace<span className="text-saffron">.</span>
 						</h1>
@@ -154,8 +195,7 @@ export default function Home() {
 							use at higher-education institutions.
 						</p>
 					</div>
-					<div className="flex flex-col items-center gap-4 bg-white
-					rounded-xl p-6">
+					<div className="flex flex-col items-center gap-4 rounded-xl bg-white p-6">
 						<h1 className="text-4xl font-bold">
 							Integrate<span className="text-saffron">.</span>
 						</h1>
@@ -164,8 +204,7 @@ export default function Home() {
 							frustration caused by navigating between separate sites and apps.
 						</p>
 					</div>
-					<div className="flex flex-col items-center gap-4 bg-white
-					rounded-xl p-6">
+					<div className="flex flex-col items-center gap-4 rounded-xl bg-white p-6">
 						<h1 className="text-4xl font-bold">
 							Consolidate<span className="text-saffron">.</span>
 						</h1>
@@ -179,36 +218,61 @@ export default function Home() {
 
 			{/* Differentiation Continued */}
 			<Section color="bg-magenta">
-				<div className="max-w-250 px-8">
-					<h1 className="pb-8 text-center text-5xl font-bold">
-						Built for higher-education institutions
-						<span className="text-saffron">.</span>
-					</h1>
-					{/*<div className="flex flex-row flex-wrap items-center justify-center gap-[3rem]">*/}
-						<div className="flex flex-col gap-2 bg-white rounded-xl p-6 text-black">
-							<div className="text-3xl font-bold flex items-center">
-								<GraduationCap size={36} style={{ marginRight: "0.5rem" }} />
-								The right tool for the job
-								<span className="text-saffron">.</span>
-							</div>
-							<p className="text-xl">
-								Dormly&apos;s software is purpose-built for higher-education
-								institutions, nothing else. No more morphing general-purpose
-								software into something it&apos;s not.
+				<h1 className="px-8 text-center text-5xl font-bold">
+					How we do things differently<span className="text-saffron">.</span>
+				</h1>
+				<div className="w-full max-w-250 min-w-96 px-8">
+					<Carousel
+						opts={{ loop: true }}
+						setApi={setApi}
+						plugins={[
+							Autoplay({
+								delay: 5000,
+								stopOnMouseEnter: true,
+								stopOnInteraction: true,
+							}),
+						]}>
+						<CarouselContent>
+							<CarouselItem>
+								<CarouselCard
+									title="Built for higher-education institutions"
+									description="Dormly's software is purpose-built for higher-education
+										institutions, nothing else. No more morphing general-purpose
+										software into something it's not."
+									icon={<GraduationCap size={48} />}
+								/>
+							</CarouselItem>
+							<CarouselItem>
+								<CarouselCard
+									title="Customization at the forefront"
+									description="Dormly's is created with customization in mind. No longer struggle to create a unique and unified campus identity for your institution."
+									icon={<Paintbrush size={48} />}
+								/>
+							</CarouselItem>
+						</CarouselContent>
+
+						<div className="flex flex-row justify-between gap-4 pt-4">
+							<button
+								className="text-magenta rounded-lg bg-white p-2 hover:cursor-pointer"
+								onClick={scrollPrev}>
+								<ChevronLeft
+									strokeWidth={3}
+									style={{ width: "1rem", height: "1rem" }}
+								/>
+							</button>
+							<p>
+								{current} of {count}
 							</p>
-
-							<Link href="/software" className="font-bold text-white">
-					<span className="bg-saffron flex flex-row items-center gap-1 rounded-full px-3 py-1.5">
-						<p>Check it Out</p>
-						<ChevronRight
-							strokeWidth={3}
-							style={{ width: "1em", height: "1em" }}
-						/>
-					</span>
-							</Link>
+							<button
+								className="text-magenta rounded-lg bg-white p-2 hover:cursor-pointer"
+								onClick={scrollNext}>
+								<ChevronRight
+									strokeWidth={3}
+									style={{ width: "1rem", height: "1rem" }}
+								/>
+							</button>
 						</div>
-					{/*</div>*/}
-
+					</Carousel>
 				</div>
 			</Section>
 
