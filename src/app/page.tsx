@@ -229,9 +229,11 @@ export default function Home() {
 							Autoplay({
 								delay: 5000,
 								stopOnMouseEnter: true,
-								stopOnInteraction: true,
 							}),
-						]}>
+						]}
+						onMouseLeave={() => {
+							api?.plugins().autoplay.play();
+						}}>
 						<CarouselContent>
 							<CarouselItem>
 								<CarouselCard
