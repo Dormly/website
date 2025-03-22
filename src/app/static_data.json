@@ -61,18 +61,6 @@
 			"name": "Jackson S",
 			"relation": "Student @ University of South Florida",
 			"description": "I have to log in five times just to navigate our portal"
-		},
-		{
-			"imageSrc": "/dormly.svg",
-			"name": "Jessica A",
-			"relation": "Student @ University",
-			"description": "Lorem Ipsum"
-		},
-		{
-			"imageSrc": "/dormly.svg",
-			"name": "Sam F",
-			"relation": "Student @ University",
-			"description": "Lorem Ipsum"
 		}
 	]
 }
