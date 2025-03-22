@@ -12,6 +12,7 @@ import {
 import { Testimonial } from "./components/Testimonial";
 import { Bio } from "./components/Bio";
 import { Section } from "./components/Section";
+import { Heading, SubHeading } from "@/app/components/TextTypes";
 
 import static_data from "./static_data.json";
 
@@ -25,6 +26,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { CarouselCard } from "@/app/components/CarouselCard";
+import Link from "next/link";
 
 export default function Home() {
 	const words = [
@@ -95,8 +97,8 @@ export default function Home() {
 	return (
 		<>
 			{/* Landing Graphic */}
-			<div className="flex flex-wrap justify-center gap-[3rem] py-[2rem]">
-				<div className="flex w-96 flex-col items-center justify-center py-[2rem] text-6xl">
+			<div className="flex flex-wrap justify-center gap-[2rem] py-10 pb-20 sm:py-30 md:gap-[6rem] md:py-30 lg:gap-[8rem] lg:py-30">
+				<div className="flex flex-col items-center justify-center py-[2rem] text-5xl md:text-6xl lg:text-7xl">
 					<h1 className="">Connect your</h1>
 					<motion.p
 						key={currentWordIndex}
@@ -114,31 +116,13 @@ export default function Home() {
 						</span>
 					</h1>
 				</div>
-				<div className="flex justify-center overflow-x-hidden">
-					<Image
-						src="/landingPage/events.svg"
-						alt="phone"
-						width={243}
-						height={489}
-						className="z-20 scale-90"
-					/>
-					<span className="absolute z-30">
-						<Image
-							src="/landingPage/dashboard.svg"
-							alt="phone"
-							width={243}
-							height={489}
-							className=""
-						/>
-					</span>
-					<Image
-						src="/landingPage/foryou.svg"
-						alt="phone"
-						width={243}
-						height={489}
-						className="z-20 scale-90"
-					/>
-				</div>
+				<Image
+					src="/landingPage/OnCampusTriage.png"
+					alt="phone"
+					width={512}
+					height={512}
+					className="px-8"
+				/>
 			</div>
 
 			{/* Attention Grabber */}
@@ -155,59 +139,58 @@ export default function Home() {
 						annually on 45 different types of software.
 					</h1>
 				</span>
-				<h1 className="px-[2rem] text-center text-5xl font-bold underline-offset-4">
-					Real students & staff, real problems
-					<span className="text-saffron">.</span>
-				</h1>
+				<Heading period>Real students & staff, real problems</Heading>
 				<Marquee autoFill={true}>
 					{static_data.negativeTestimonials.map((testimonial) => (
 						<Testimonial
 							key={testimonial.name}
-							imageSrc={testimonial.imageSrc}
 							name={testimonial.name}
 							description={testimonial.description}
 							relation={testimonial.relation}
+							imageSrc={testimonial.imageSrc}
 						/>
 					))}
 				</Marquee>
 			</Section>
 
-			{/* Differentiation */}
+			{/* Solution */}
 			<Section color="bg-magnolia">
-				<h1 className="px-8 text-center text-5xl font-bold">
-					The <span className={`${dmSerif.className}`}>Dormly</span> Difference
-					<span className="text-saffron">.</span>
-				</h1>
+				<div className="flex flex-col items-center gap-4">
+					<Heading period>
+						The <span className={`${dmSerif.className}`}>Dormly</span> Solution
+					</Heading>
+					<Link href={"/software"}>
+						<div className="text-saffron flex flex-row font-bold">
+							<p>Software</p>
+							<ChevronRight />
+						</div>
+					</Link>
+				</div>
+
 				<Image
 					className="px-8"
-					src="/landingPage/macbook.png"
+					src="/landingPage/Duo.png"
 					alt="macbook"
-					width={640}
+					width={720}
 					height={640}
 				/>
 				<div className="flex flex-row flex-wrap justify-center gap-8">
-					<div className="flex flex-col items-center gap-4 rounded-xl bg-white p-6">
-						<h1 className="text-4xl font-bold">
-							Replace<span className="text-saffron">.</span>
-						</h1>
+					<div className="rounded-x flex flex-col items-center gap-4 p-6">
+						<SubHeading period>Replace</SubHeading>
 						<p className="w-96 text-xl leading-8 text-pretty">
 							Our software suite is designed to replace and improve software in
 							use at higher-education institutions.
 						</p>
 					</div>
-					<div className="flex flex-col items-center gap-4 rounded-xl bg-white p-6">
-						<h1 className="text-4xl font-bold">
-							Integrate<span className="text-saffron">.</span>
-						</h1>
+					<div className="flex flex-col items-center gap-4 rounded-xl p-6">
+						<SubHeading period>Integrate</SubHeading>
 						<p className="w-96 text-xl leading-8 text-pretty">
 							Provide a consistent, streamlined user experience. Reduce
 							frustration caused by navigating between separate sites and apps.
 						</p>
 					</div>
-					<div className="flex flex-col items-center gap-4 rounded-xl bg-white p-6">
-						<h1 className="text-4xl font-bold">
-							Consolidate<span className="text-saffron">.</span>
-						</h1>
+					<div className="flex flex-col items-center gap-4 rounded-xl p-6">
+						<SubHeading period>Consolidate</SubHeading>
 						<p className="w-96 text-xl leading-8 text-pretty">
 							Cut costs and confusion by consolidating to a single, easy to use
 							system.
@@ -216,11 +199,11 @@ export default function Home() {
 				</div>
 			</Section>
 
-			{/* Differentiation Continued */}
+			{/* Differentiation */}
 			<Section color="bg-magenta">
-				<h1 className="px-8 text-center text-5xl font-bold">
-					How we do things differently<span className="text-saffron">.</span>
-				</h1>
+				<Heading period>
+					The <span className={`${dmSerif.className}`}>Dormly</span> Difference
+				</Heading>
 				<div className="w-full max-w-250 min-w-96 px-8">
 					<Carousel
 						opts={{ loop: true }}
@@ -280,10 +263,9 @@ export default function Home() {
 
 			{/* Team */}
 			<Section color="bg-magnolia">
-				<h1 className="px-8 text-center text-5xl font-bold">
-					The team behind <span className={`${dmSerif.className}`}>Dormly</span>
-					<span className="text-saffron">.</span>
-				</h1>
+				<Heading period>
+					The <span className={`${dmSerif.className}`}>Dormly</span> Team
+				</Heading>
 				<h1 className="px-8 text-center text-3xl font-bold">
 					Built by students and staff, for students and staff.
 				</h1>

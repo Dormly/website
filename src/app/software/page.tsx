@@ -6,6 +6,7 @@ import { Section } from "../components/Section";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { X, Component } from "lucide-react";
+import { Heading } from "@/app/components/TextTypes";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -62,39 +63,21 @@ export default function Software() {
 						className="flex w-[25rem] flex-col items-center gap-[1rem]"
 						href="/software/oncampus">
 						<span className="flex flex-row items-center gap-[0.5rem]">
-							<h1 className="text-4xl font-bold">OnCampus</h1>
+							<h1 className="text-5xl font-bold">OnCampus</h1>
 							<ChevronRight
 								className="text-saffron"
-								style={{ width: "1.5em", height: "1.5em" }}
+								style={{ width: "2em", height: "2em" }}
 								strokeWidth={4}
 							/>
 						</span>
 
-						<div className="flex flex-row justify-center">
-							<Image
-								src="/landingPage/events.svg"
-								alt="phone"
-								width={128}
-								height={489}
-								className="z-20 scale-90"
-							/>
-							<span className="absolute z-30">
-								<Image
-									src="/landingPage/dashboard.svg"
-									alt="phone"
-									width={128}
-									height={489}
-									className=""
-								/>
-							</span>
-							<Image
-								src="/landingPage/foryou.svg"
-								alt="phone"
-								width={128}
-								height={489}
-								className="z-20 scale-90"
-							/>
-						</div>
+						<Image
+							src="/landingPage/OnCampusTriage.png"
+							alt="phone"
+							width={256}
+							height={256}
+							className=""
+						/>
 
 						<h1 className="text-center text-3xl font-bold">
 							The student app built for the modern day
@@ -105,16 +88,16 @@ export default function Software() {
 						className="flex w-[25rem] flex-col items-center justify-between"
 						href="/software/reslife">
 						<span className="flex flex-row items-center gap-[0.5rem]">
-							<h1 className="text-4xl font-bold">ResLife</h1>
+							<h1 className="text-5xl font-bold">ResLife</h1>
 							<ChevronRight
 								className="text-saffron"
-								style={{ width: "1.5em", height: "1.5em" }}
+								style={{ width: "2em", height: "2em" }}
 								strokeWidth={4}
 							/>
 						</span>
 
 						<Image
-							src="/landingPage/macbook.png"
+							src="/landingPage/ResLifeLaptop.png"
 							alt="ResLife"
 							height={489}
 							width={320}
@@ -130,18 +113,12 @@ export default function Software() {
 
 			{/* Benefits of a single system */}
 			<Section color="bg-magenta">
-				<h1 className="text-center text-5xl font-bold">
-					One system
-					<span className="text-saffron">.</span>
-				</h1>
+				<Heading period>One system</Heading>
 			</Section>
 
 			{/* Modularity */}
 			<Section color="bg-magnolia">
-				<h1 className="text-center text-5xl font-bold">
-					Modular
-					<span className="text-saffron">.</span>
-				</h1>
+				<Heading period>Modular</Heading>
 				<div className="flex flex-row flex-wrap items-center justify-center gap-[3rem]">
 					<div className="">
 						<Component width={72} height={72} />
@@ -161,10 +138,7 @@ export default function Software() {
 
 			{/* Compare to BeConnected, Rokwire, StarRez, CSC Go? Pugh matrix? */}
 			<Section color="bg-magenta">
-				<h1 className="text-center text-5xl font-bold">
-					Compare
-					<span className="text-saffron">.</span>
-				</h1>
+				<Heading period>Compare</Heading>
 			</Section>
 		</>
 	);
