@@ -29,9 +29,15 @@ export default function ResLife() {
 			</Section>
 
 			<Section color="bg-magenta">
-				<Heading period>Things residential living communities need</Heading>
+				<Heading period>Residential living community essentials</Heading>
 				<TopDown>
 					<BodyText left>
+						<p>
+							<span className="text-saffron">-</span> Rosters
+						</p>
+						<p>
+							<span className="text-saffron">-</span> Room Assignments
+						</p>
 						<p>
 							<span className="text-saffron">-</span> Standard Reports
 						</p>
@@ -55,12 +61,35 @@ export default function ResLife() {
 			</Section>
 
 			<Section color="bg-magnolia">
-				<Heading period>Speed up your workflows</Heading>
-				<BodyText>ResLife tailors the experience to the user.</BodyText>
+				<Heading period>Speed up workflows</Heading>
+				<BodyText left>ResLife tailors the experience to the user.</BodyText>
+				<BodyText left>
+					ResLife intelligently recommends information and actions relevant to
+					the user. For example, Resident Advisors see rosters and reports
+					assigned to them, reducing extraneous information.
+				</BodyText>
 			</Section>
 
 			<Section color="bg-magenta">
 				<Heading period>Works together</Heading>
+				<SideBySide>
+					<Image
+						src={"/landingPage/Duo.png"}
+						alt={"Duo"}
+						width={512}
+						height={512}
+						className="px-8"
+					/>
+					<BodyText left>
+						Our competitor&apos;s mailroom solution sends emails when packages
+						are delivered. It&apos;s 2025. ResLife sends the recipient a push
+						notification through the OnCampus app.
+					</BodyText>
+				</SideBySide>
+				<BodyText left>
+					Push notifications can also be used for emergency notifications,
+					announcements, and reminders.
+				</BodyText>
 			</Section>
 
 			<Section color="bg-magnolia">
@@ -79,9 +108,7 @@ export default function ResLife() {
 							width={256}
 						/>
 						<div className="flex flex-row items-center">
-							<SubHeading period noPadding>
-								OnCampus
-							</SubHeading>
+							<SubHeading noPadding>OnCampus</SubHeading>
 							<ChevronRight
 								className="text-saffron"
 								style={{ width: "2em", height: "2em" }}

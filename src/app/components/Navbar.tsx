@@ -72,10 +72,10 @@ const Navbar = () => {
 											Software
 										</Link>
 										<Link
-											href="/roadmap"
+											href="/about"
 											className="text-lg"
 											onClick={() => setIsOpen(false)}>
-											Roadmap
+											About
 										</Link>
 										<Link
 											href="/contact"
@@ -104,8 +104,8 @@ const Navbar = () => {
 					<Link href="/software" className="text-lg font-bold">
 						Software
 					</Link>
-					<Link href="/roadmap" className="text-lg font-bold">
-						Roadmap
+					<Link href="/about" className="text-lg font-bold">
+						About
 					</Link>
 					<Link
 						href="/contact"

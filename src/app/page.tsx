@@ -10,7 +10,7 @@ import {
 	Paintbrush,
 } from "lucide-react";
 import { Testimonial } from "./components/Testimonial";
-import { Bio } from "./components/Bio";
+import { Bio } from "./components/PeopleCards";
 import { Section } from "./components/Section";
 import { Heading, SubHeading } from "@/app/components/TextTypes";
 
@@ -139,7 +139,7 @@ export default function Home() {
 						annually on 45 different types of software.
 					</h1>
 				</span>
-				<Heading period>Real students & staff, real problems</Heading>
+				<Heading period>Students & staff aren&apos;t satisfied</Heading>
 				<Marquee autoFill={true}>
 					{static_data.negativeTestimonials.map((testimonial) => (
 						<Testimonial
@@ -155,17 +155,15 @@ export default function Home() {
 
 			{/* Solution */}
 			<Section color="bg-magnolia">
-				<div className="flex flex-col items-center gap-4">
-					<Heading period>
-						The <span className={`${dmSerif.className}`}>Dormly</span> Solution
-					</Heading>
-					<Link href={"/software"}>
-						<div className="text-saffron flex flex-row font-bold">
-							<p>Software</p>
-							<ChevronRight />
-						</div>
-					</Link>
-				</div>
+				<Heading period>
+					The <span className={`${dmSerif.className}`}>Dormly</span> Solution
+				</Heading>
+				<Link href={"/software"}>
+					<div className="text-saffron flex flex-row font-bold">
+						<p>Software</p>
+						<ChevronRight />
+					</div>
+				</Link>
 
 				<Image
 					className="px-8"
@@ -178,14 +176,14 @@ export default function Home() {
 					<div className="rounded-x flex flex-col items-center gap-4 p-6">
 						<SubHeading period>Replace</SubHeading>
 						<p className="w-96 text-xl leading-8 text-pretty">
-							Our software suite is designed to replace and improve software in
-							use at higher-education institutions.
+							Dormly&apos;s software suite replaces and improves software at
+							higher-education institutions.
 						</p>
 					</div>
 					<div className="flex flex-col items-center gap-4 rounded-xl p-6">
 						<SubHeading period>Integrate</SubHeading>
 						<p className="w-96 text-xl leading-8 text-pretty">
-							Provide a consistent, streamlined user experience. Reduce
+							Dormly provides a consistent, streamlined user experience. Reduce
 							frustration caused by navigating between separate sites and apps.
 						</p>
 					</div>
@@ -222,7 +220,7 @@ export default function Home() {
 								<CarouselCard
 									title="Built for higher-education institutions"
 									description="Dormly's software is purpose-built for higher-education
-										institutions, nothing else. No more morphing general-purpose
+										institutions, nothing else. Our competitors morph general-purpose
 										software into something it's not."
 									icon={<GraduationCap size={48} />}
 								/>
@@ -230,7 +228,7 @@ export default function Home() {
 							<CarouselItem>
 								<CarouselCard
 									title="Customization at the forefront"
-									description="Dormly's is created with customization in mind. No longer struggle to create a unique and unified campus identity for your institution."
+									description="Dormly's is created with customization in mind. Create a unique and unified campus identity for your institution."
 									icon={<Paintbrush size={48} />}
 								/>
 							</CarouselItem>
@@ -266,9 +264,15 @@ export default function Home() {
 				<Heading period>
 					The <span className={`${dmSerif.className}`}>Dormly</span> Team
 				</Heading>
-				<h1 className="px-8 text-center text-3xl font-bold">
+				<Link href={"/contact"}>
+					<div className="text-saffron flex flex-row font-bold">
+						<p>Get in Touch</p>
+						<ChevronRight />
+					</div>
+				</Link>
+				<SubHeading>
 					Built by students and staff, for students and staff.
-				</h1>
+				</SubHeading>
 				<div className="grid justify-center gap-8 px-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
 					{static_data.employees.map((employee) => (
 						<Bio
@@ -281,6 +285,12 @@ export default function Home() {
 						/>
 					))}
 				</div>
+				<Link href={"/about"}>
+					<div className="text-saffron flex flex-row font-bold">
+						<p>+ 2 more</p>
+						<ChevronRight />
+					</div>
+				</Link>
 			</Section>
 		</>
 	);
