@@ -18,7 +18,10 @@ function Footer() {
 					href="https://www.linkedin.com/company/dormlygroup"
 					iconSrc="/linkedin.svg"
 				/>
-				<SocialIcon href="/" iconSrc="/instagram.svg" />
+				<SocialIcon
+					href="https://www.instagram.com/dormlygroup/"
+					iconSrc="/instagram.svg"
+				/>
 				<p>&copy; 2025 Dormly</p>
 			</div>
 		</div>

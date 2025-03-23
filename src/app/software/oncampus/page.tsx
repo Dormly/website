@@ -117,9 +117,7 @@ export default function OnCampus() {
 							width={320}
 						/>
 						<div className="flex flex-row items-center">
-							<SubHeading period noPadding>
-								ResLife
-							</SubHeading>
+							<SubHeading noPadding>ResLife</SubHeading>
 							<ChevronRight
 								className="text-saffron"
 								style={{ width: "2em", height: "2em" }}

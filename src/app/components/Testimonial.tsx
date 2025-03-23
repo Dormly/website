@@ -8,20 +8,30 @@ export function Testimonial({
 	description,
 	relation,
 }: {
-	imageSrc: string;
+	imageSrc?: string;
 	name: string;
 	description: string;
 	relation: string;
 }) {
 	return (
-		<div className="ml-[2rem] flex w-[30rem] flex-row gap-[2rem] rounded-xl bg-white p-[2rem] text-black">
-			<Image
-				className="h-fit rounded-full"
-				alt="Testimonial Picture"
-				height={96}
-				width={96}
-				src={imageSrc}
-			/>
+		<div className="ml-[2rem] flex min-h-48 w-[30rem] flex-row items-center gap-[2rem] rounded-xl bg-white p-[2rem] text-black">
+			{imageSrc ? (
+				<Image
+					className="h-fit rounded-full"
+					alt="Testimonial Picture"
+					height={96}
+					width={96}
+					src={imageSrc}
+				/>
+			) : (
+				<Image
+					className="h-fit rounded-full"
+					alt="Testimonial Picture"
+					height={96}
+					width={96}
+					src={"/dormly.svg"}
+				/>
+			)}
 			<div className="flex flex-col justify-between">
 				<p>&quot;{description}&quot;</p>
 				<span>
