@@ -85,10 +85,21 @@
 	],
 	"negativeTestimonials": [
 		{
+			"name": "Jackson S",
+			"relation": "Student @ University of South Florida",
+			"description": "I have to log in five times just to navigate our portal"
+		},
+		{
 			"imageSrc": "/negativeTestimonials/josh.png",
 			"name": "Josh M",
 			"relation": "Resident Advisor @ Auburn University",
 			"description": "Our supervisors don't even know how to use our current software"
+		},
+		{
+			"imageSrc": "/negativeTestimonials/katie.png",
+			"name": "Katie W",
+			"relation": "Staff @ Bradley University",
+			"description": "A new system could speed up my daily activities"
 		},
 		{
 			"imageSrc": "/negativeTestimonials/suzen.png",
@@ -103,14 +114,22 @@
 			"description": "Our current student app is just a website crammed into an app"
 		},
 		{
-			"name": "Jackson S",
-			"relation": "Student @ University of South Florida",
-			"description": "I have to log in five times just to navigate our portal"
-		},
-		{
+			"imageSrc": "/negativeTestimonials/alex.png",
 			"name": "Alex L",
 			"relation": "Student @ The University of Auckland",
 			"description": "...it's so bad I've given up on finding classes"
+		},
+		{
+			"imageSrc": "/negativeTestimonials/caleb.png",
+			"name": "Caleb N",
+			"relation": "Student @ Southern Illinois University",
+			"description": "It's a poorly designed app ripped straight off the school's website that isn't user friendly whatsoever"
+		},
+		{
+			"imageSrc": "/negativeTestimonials/morgan.png",
+			"name": "Morgan K",
+			"relation": "Student @ Purdue University",
+			"description": "The website is very cluttered and it can be hard to find what I need at times"
 		}
 	]
 }
