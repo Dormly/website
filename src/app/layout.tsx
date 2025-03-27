@@ -3,6 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 import Navbar from "./components/Navbar";
 import { SocialIcon } from "./components/SocialIcon";
@@ -44,6 +45,7 @@ export default function RootLayout({
 				<Navbar />
 				<div className="bg-magnolia flex flex-col overflow-x-hidden">
 					{children}
+					<Analytics />
 				</div>
 				<Footer />
 			</body>
