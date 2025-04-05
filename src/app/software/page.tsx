@@ -116,7 +116,7 @@ const ComparisonTable = () => {
 function Disclaimer({
 	setDisclaimerShown,
 }: {
-	setDisclaimerShown: (value: boolean) => void;
+	setDisclaimerShown: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
 	return (
 		<>
