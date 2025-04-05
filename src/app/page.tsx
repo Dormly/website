@@ -270,6 +270,13 @@ export default function Home() {
 						<ChevronRight />
 					</div>
 				</Link>
+				<Image
+					className="px-8"
+					src="/landingPage/teamCore.JPG"
+					alt="team"
+					width={720}
+					height={640}
+				/>
 				<SubHeading>
 					Built by students and staff, for students and staff.
 				</SubHeading>
