@@ -228,7 +228,7 @@ export default function Home() {
 							<CarouselItem>
 								<CarouselCard
 									title="Customization at the forefront"
-									description="Dormly's is created with customization in mind. Create a unique and unified campus identity for your institution."
+									description="Dormly creates products with customization in mind. Create a unique and unified campus identity for your institution."
 									icon={<Paintbrush size={48} />}
 								/>
 							</CarouselItem>
@@ -270,6 +270,13 @@ export default function Home() {
 						<ChevronRight />
 					</div>
 				</Link>
+				<Image
+					className="px-8"
+					src="/landingPage/teamCore.JPG"
+					alt="team"
+					width={720}
+					height={640}
+				/>
 				<SubHeading>
 					Built by students and staff, for students and staff.
 				</SubHeading>
@@ -285,7 +292,7 @@ export default function Home() {
 						/>
 					))}
 				</div>
-				<Link href={"/about"}>
+				<Link href={"/about#fullteam"}>
 					<div className="text-saffron flex flex-row font-bold">
 						<p>+ 2 more</p>
 						<ChevronRight />

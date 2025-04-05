@@ -12,4 +12,12 @@ export default [
 	...tseslint.configs.recommended,
 	pluginReact.configs.flat.recommended,
 	eslintConfigPrettier,
+	{
+		rules: {
+			"no-unused-vars": [
+				"error",
+				{ vars: "all", args: "after-used", ignoreRestSiblings: true },
+			],
+		},
+	},
 ];

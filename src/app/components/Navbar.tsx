@@ -83,6 +83,12 @@ const Navbar = () => {
 											onClick={() => setIsOpen(false)}>
 											Get in Touch
 										</Link>
+										{/* <Link
+											href="/login"
+											className="bg-magenta hover:bg-saffron rounded-full px-3 py-1.5 font-bold text-white duration-100"
+											onClick={() => setIsOpen(false)}>
+											Login
+										</Link> */}
 									</div>
 								</div>
 							</motion.nav>
@@ -112,6 +118,11 @@ const Navbar = () => {
 						className="bg-magenta hover:bg-saffron rounded-full px-3 py-1.5 font-bold text-white duration-100">
 						Get in Touch
 					</Link>
+					{/* <Link
+						href="/login"
+						className="bg-magenta hover:bg-saffron rounded-full px-3 py-1.5 font-bold text-white duration-100">
+						Login
+					</Link> */}
 				</nav>
 			</div>
 		</nav>
