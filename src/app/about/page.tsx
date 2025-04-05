@@ -61,9 +61,18 @@ export default function About() {
 			</Section>
 
 			<Section color="bg-magnolia">
-				<Heading period>
-					The <span className={`${dmSerif.className}`}>Dormly</span> Team
-				</Heading>
+				<div id="fullteam">
+					<Heading period>
+						The <span className={`${dmSerif.className}`}>Dormly</span> Team
+					</Heading>
+				</div>
+				<Image
+					className="px-8"
+					src="/landingPage/teamCore.JPG"
+					alt="team"
+					width={720}
+					height={640}
+				/>
 				<Link href={"/contact"}>
 					<div className="text-saffron flex flex-row font-bold">
 						<p>Get in Touch</p>

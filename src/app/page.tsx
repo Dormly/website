@@ -292,7 +292,7 @@ export default function Home() {
 						/>
 					))}
 				</div>
-				<Link href={"/about"}>
+				<Link href={"/about#fullteam"}>
 					<div className="text-saffron flex flex-row font-bold">
 						<p>+ 2 more</p>
 						<ChevronRight />
