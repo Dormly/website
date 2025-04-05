@@ -228,7 +228,7 @@ export default function Home() {
 							<CarouselItem>
 								<CarouselCard
 									title="Customization at the forefront"
-									description="Dormly's is created with customization in mind. Create a unique and unified campus identity for your institution."
+									description="Dormly creates products with customization in mind. Create a unique and unified campus identity for your institution."
 									icon={<Paintbrush size={48} />}
 								/>
 							</CarouselItem>
