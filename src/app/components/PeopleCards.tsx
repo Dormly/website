@@ -47,14 +47,12 @@ export function Contact({
 	imageSrc,
 	name,
 	email,
-	phone,
 	position,
 	linkedinLink,
 }: {
 	imageSrc: string;
 	name: string;
 	email: string;
-	phone: string;
 	position: string;
 	linkedinLink?: string;
 }) {
@@ -83,11 +81,6 @@ export function Contact({
 					href={`mailto:${email}?subject=Interest%20in%20Dormly`}
 					className="decoration-magenta font-semibold underline underline-offset-4">
 					{email}
-				</a>
-				<a
-					href={`tel:${phone}`}
-					className="decoration-magenta font-semibold underline underline-offset-4">
-					{phone}
 				</a>
 			</div>
 		</div>
