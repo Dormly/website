@@ -25,7 +25,6 @@ export default function GetInTouch() {
 							imageSrc={contact.imageSrc}
 							name={contact.name}
 							email={contact.email}
-							phone={contact.phone}
 							position={contact.position}
 							linkedinLink={contact.linkedinLink}
 						/>
