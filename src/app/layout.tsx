@@ -16,11 +16,11 @@ function Footer() {
 			</div>
 			<div className="flex flex-row items-center gap-[1rem]">
 				<SocialIcon
-					href="https://www.linkedin.com/company/dormlygroup"
+					href="https://www.linkedin.com/company/dormlysoftware/"
 					iconSrc="/linkedin.svg"
 				/>
 				<SocialIcon
-					href="https://www.instagram.com/dormlygroup/"
+					href="https://www.instagram.com/dormlysoftware/"
 					iconSrc="/instagram.svg"
 				/>
 				<p>&copy; 2025 Dormly</p>
