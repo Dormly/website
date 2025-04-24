@@ -11,14 +11,14 @@
 	"fullEmployees": [
 		{
 			"name": "Zachary Dupree",
-			"position": "Founder & Developer",
+			"position": "CEO & Developer",
 			"imageSrc": "/bioPhotos/zack.png",
 			"description": "Zack is a Computer Science student and Resident Advisor at Bradley University. Zack enjoys coding projects that make life easier and simpler. Zack also likes hiking and photography.",
 			"linkedinLink": "https://www.linkedin.com/in/zachary-dupree/"
 		},
 		{
 			"name": "Ryan Dodd",
-			"position": "Co-Founder & Developer",
+			"position": "CTO & Developer",
 			"imageSrc": "/bioPhotos/dodd.png",
 			"description": "Ryan is a Computer Science student and Resident Advisor at Bradley University, who loves programming. Ryan has experience developing in multiple areas, particularly with web and augmented reality. In his free time, Ryan enjoys rock climbing, reading, and creating new ideas.",
 			"linkedinLink": "https://www.linkedin.com/in/ryan-dodd-171a30249/"
@@ -29,13 +29,6 @@
 			"imageSrc": "/bioPhotos/duncan.png",
 			"description": "Duncan is a Mathematics student and Resident Advisor at Bradley University, with a hobby for programming. Duncan has experience with a variety of computer science topics, dabbling in whatever interests him at a given time. Duncan enjoys learning new things, cooking, and spending time with friends.",
 			"linkedinLink": "https://www.linkedin.com/in/duncan-carr-277468263/"
-		},
-		{
-			"name": "Daniel Thornley",
-			"position": "Co-Founder & Developer",
-			"imageSrc": "/bioPhotos/daniel.png",
-			"description": "Daniel is a 2nd year Computer Science student at Bradley University who enjoys learning new programming skills. In his free time Daniel likes to play piano, playing tennis, and going to the gym.",
-			"linkedinLink": "https://www.linkedin.com/in/daniel-thornley-8a47a0299/"
 		},
 		{
 			"name": "Alexander Talbott",
@@ -76,7 +69,7 @@
 		},
 		{
 			"name": "Daniel Thornley",
-			"position": "Co-Founder & Developer",
+			"position": "Developer",
 			"imageSrc": "/bioPhotos/daniel.png",
 			"description": "Daniel is a 2nd year Computer Science student at Bradley University who enjoys learning new programming skills. In his free time Daniel likes to play piano, playing tennis, and going to the gym.",
 			"linkedinLink": "https://www.linkedin.com/in/daniel-thornley-8a47a0299/"
