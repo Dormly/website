@@ -3,76 +3,32 @@
 		{
 			"name": "Zachary Dupree",
 			"position": "Founder & Developer",
-			"imageSrc": "/bioPhotos/zack.png",
+			"imageSrc": "/bioPhotos/zack.jpg",
 			"email": "zack@zackdupree.com",
 			"linkedinLink": "https://www.linkedin.com/in/zachary-dupree/"
-		}
-	],
-	"fullEmployees": [
-		{
-			"name": "Zachary Dupree",
-			"position": "CEO & Developer",
-			"imageSrc": "/bioPhotos/zack.png",
-			"description": "Zack is a Computer Science student and Resident Advisor at Bradley University. Zack enjoys coding projects that make life easier and simpler. Zack also likes hiking and photography.",
-			"linkedinLink": "https://www.linkedin.com/in/zachary-dupree/"
-		},
-		{
-			"name": "Ryan Dodd",
-			"position": "CTO & Developer",
-			"imageSrc": "/bioPhotos/dodd.png",
-			"description": "Ryan is a Computer Science student and Resident Advisor at Bradley University, who loves programming. Ryan has experience developing in multiple areas, particularly with web and augmented reality. In his free time, Ryan enjoys rock climbing, reading, and creating new ideas.",
-			"linkedinLink": "https://www.linkedin.com/in/ryan-dodd-171a30249/"
-		},
-		{
-			"name": "Duncan Carr",
-			"position": "Co-Founder & Developer",
-			"imageSrc": "/bioPhotos/duncan.png",
-			"description": "Duncan is a Mathematics student and Resident Advisor at Bradley University, with a hobby for programming. Duncan has experience with a variety of computer science topics, dabbling in whatever interests him at a given time. Duncan enjoys learning new things, cooking, and spending time with friends.",
-			"linkedinLink": "https://www.linkedin.com/in/duncan-carr-277468263/"
-		},
-		{
-			"name": "Alexander Talbott",
-			"position": "UI/UX Design",
-			"imageSrc": "/dormly.svg",
-			"description": "Alexander is a UX designer, dedicated to ensuring the best possible experience for all users. Alexander studied at Bradley University and has traveled the globe working for clients, making digital and physical products that put user needs first.",
-			"linkedinLink": ""
-		},
-		{
-			"name": "JD de Beauvoir",
-			"position": "Developer",
-			"imageSrc": "/dormly.svg",
-			"description": "JD is a 2nd year Computer Science and Music student at Bradley University. JD has experience with all kinds of software development, from full stack websites to Minecraft mods. JD also plays the violin, and does gigs in his free time.",
-			"linkedinLink": ""
 		}
 	],
 	"employees": [
 		{
 			"name": "Zachary Dupree",
-			"position": "Founder & Developer",
-			"imageSrc": "/bioPhotos/zack.png",
+			"position": "CEO, Founder, & Developer",
+			"imageSrc": "/bioPhotos/zack.jpg",
 			"description": "Zack is a Computer Science student and Resident Advisor at Bradley University. Zack enjoys coding projects that make life easier and simpler. Zack also likes hiking and photography.",
 			"linkedinLink": "https://www.linkedin.com/in/zachary-dupree/"
 		},
 		{
 			"name": "Ryan Dodd",
-			"position": "Co-Founder & Developer",
-			"imageSrc": "/bioPhotos/dodd.png",
+			"position": "CTO, Co-Founder, & Developer",
+			"imageSrc": "/bioPhotos/dodd.jpg",
 			"description": "Ryan is a Computer Science student and Resident Advisor at Bradley University, who loves programming. Ryan has experience developing in multiple areas, particularly with web and augmented reality. In his free time, Ryan enjoys rock climbing, reading, and creating new ideas.",
 			"linkedinLink": "https://www.linkedin.com/in/ryan-dodd-171a30249/"
 		},
 		{
 			"name": "Duncan Carr",
 			"position": "Co-Founder & Developer",
-			"imageSrc": "/bioPhotos/duncan.png",
+			"imageSrc": "/bioPhotos/duncan.jpg",
 			"description": "Duncan is a Mathematics student and Resident Advisor at Bradley University, with a hobby for programming. Duncan has experience with a variety of computer science topics, dabbling in whatever interests him at a given time. Duncan enjoys learning new things, cooking, and spending time with friends.",
 			"linkedinLink": "https://www.linkedin.com/in/duncan-carr-277468263/"
-		},
-		{
-			"name": "Daniel Thornley",
-			"position": "Developer",
-			"imageSrc": "/bioPhotos/daniel.png",
-			"description": "Daniel is a 2nd year Computer Science student at Bradley University who enjoys learning new programming skills. In his free time Daniel likes to play piano, playing tennis, and going to the gym.",
-			"linkedinLink": "https://www.linkedin.com/in/daniel-thornley-8a47a0299/"
 		}
 	],
 	"negativeTestimonials": [
