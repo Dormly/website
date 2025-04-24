@@ -80,7 +80,7 @@ export default function About() {
 					</div>
 				</Link>
 				<div className="grid justify-center gap-8 px-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-					{static_data.fullEmployees.map((employee) => (
+					{static_data.employees.map((employee) => (
 						<Bio
 							key={employee.name}
 							imageSrc={employee.imageSrc}
