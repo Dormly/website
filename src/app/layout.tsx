@@ -23,7 +23,11 @@ function Footer() {
 					href="https://www.instagram.com/dormlysoftware/"
 					iconSrc="/instagram.svg"
 				/>
-				<p>&copy; 2025 Dormly</p>
+				{/* <SocialIcon
+					href="https://www.facebook.com/profile.php?id=61575235274072"
+					iconSrc="/facebook.svg"
+				/> */}
+				<p>&copy; 2025 Dormly Software LLC</p>
 			</div>
 		</div>
 	);
