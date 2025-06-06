@@ -130,7 +130,7 @@ function Disclaimer({
 				page for more details.
 			</p>
 			<button
-				className="flex flex-row"
+				className="flex cursor-pointer flex-row"
 				onClick={() => {
 					setDisclaimerShown(false);
 				}}>
