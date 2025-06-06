@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import { SocialIcon } from "./components/SocialIcon";
 
 function Footer() {
+	const year: number = new Date().getFullYear();
 	return (
 		<div className="flex flex-row items-center justify-between p-8 font-bold text-white md:px-16 lg:px-36 xl:px-60">
 			<div className="">
@@ -27,7 +28,7 @@ function Footer() {
 					href="https://www.facebook.com/profile.php?id=61575235274072"
 					iconSrc="/facebook.svg"
 				/> */}
-				<p>&copy; 2025 Dormly Software LLC</p>
+				<p>&copy; {year} Dormly Software LLC</p>
 			</div>
 		</div>
 	);
